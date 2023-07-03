@@ -1,0 +1,10 @@
+ingredient_name = input("Enter the name of the ingredient: ")
+
+filtered_recipes = []
+for recipe in recipes:
+    if ingredient_name.lower() in [ingredient.lower() for ingredient in recipe.ingredients]:
+        filtered_recipes.append(recipe)
+
+# Display filtered recipes
+for recipe in filtered_recipes:
+    print(recipe.name)

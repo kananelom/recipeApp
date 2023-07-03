@@ -1,0 +1,10 @@
+food_group = input("Choose a food group: ")
+
+filtered_recipes = []
+for recipe in recipes:
+    if recipe.food_group.lower() == food_group.lower():
+        filtered_recipes.append(recipe)
+
+# Display filtered recipes
+for recipe in filtered_recipes:
+    print(recipe.name)

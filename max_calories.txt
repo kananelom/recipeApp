@@ -1,0 +1,10 @@
+max_calories = int(input("Enter the maximum number of calories: "))
+
+filtered_recipes = []
+for recipe in recipes:
+    if recipe.calories <= max_calories:
+        filtered_recipes.append(recipe)
+
+# Display filtered recipes
+for recipe in filtered_recipes:
+    print(recipe.name)
